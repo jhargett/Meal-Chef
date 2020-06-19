@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Meal-Chef/static/css/main.23948687.chunk.css",
+    "main.js": "/Meal-Chef/static/js/main.f41c9728.chunk.js",
+    "main.js.map": "/Meal-Chef/static/js/main.f41c9728.chunk.js.map",
+    "runtime-main.js": "/Meal-Chef/static/js/runtime-main.3d65c6bb.js",
+    "runtime-main.js.map": "/Meal-Chef/static/js/runtime-main.3d65c6bb.js.map",
+    "static/js/2.491249ca.chunk.js": "/Meal-Chef/static/js/2.491249ca.chunk.js",
+    "static/js/2.491249ca.chunk.js.map": "/Meal-Chef/static/js/2.491249ca.chunk.js.map",
+    "index.html": "/Meal-Chef/index.html",
+    "precache-manifest.40486fd2bee85d4d5804db16b5965abc.js": "/Meal-Chef/precache-manifest.40486fd2bee85d4d5804db16b5965abc.js",
+    "service-worker.js": "/Meal-Chef/service-worker.js",
+    "static/css/main.23948687.chunk.css.map": "/Meal-Chef/static/css/main.23948687.chunk.css.map",
+    "static/media/Search.f33b1c88.svg": "/Meal-Chef/static/media/Search.f33b1c88.svg",
+    "static/media/Hero.module.scss": "/Meal-Chef/static/media/foodBackground.c1566261.jpg",
+    "static/media/macarons.jpg": "/Meal-Chef/static/media/macarons.c0386850.jpg",
+    "static/media/muffin.jpg": "/Meal-Chef/static/media/muffin.0c29a0ab.jpg",
+    "static/media/spaghetti.jpg": "/Meal-Chef/static/media/spaghetti.ffd2bf5e.jpg",
+    "static/media/taco.jpg": "/Meal-Chef/static/media/taco.7fd46861.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d65c6bb.js",
+    "static/js/2.491249ca.chunk.js",
+    "static/css/main.23948687.chunk.css",
+    "static/js/main.f41c9728.chunk.js"
+  ]
+}
