@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ff6806faad78a6ae2b80e3bdae2d9c76",
+    "revision": "75630f9a1733eeb934e664dab4f3421c",
     "url": "/Meal-Chef/index.html"
   },
   {
-    "revision": "32e880af2481a034ded6",
+    "revision": "8745ef95615b657828e4",
     "url": "/Meal-Chef/static/css/main.23948687.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Meal-Chef/static/js/2.491249ca.chunk.js"
   },
   {
-    "revision": "32e880af2481a034ded6",
-    "url": "/Meal-Chef/static/js/main.f41c9728.chunk.js"
+    "revision": "8745ef95615b657828e4",
+    "url": "/Meal-Chef/static/js/main.7980ae5f.chunk.js"
   },
   {
     "revision": "51df1af102af2c5079c8",
