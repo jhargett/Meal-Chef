@@ -1,0 +1,53 @@
+.Filter {
+  padding: 10px 15px 10px 12px;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  display: flex;
+  position: relative;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  overflow: visible;
+  position: relative;
+
+  p {
+    padding-right: 10px;
+    font-size: 15px;
+  }
+
+  img {
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    height: 15px;
+    width: 15px;
+  }
+
+  &.Clicked {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+  }
+
+  .checkboxContainer {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: white;
+    padding: 15px;
+    opacity: 0;
+    transition: opacity 0.25s ease-in;
+    border-radius: 6px;
+    z-index: 999;
+
+    &.Clicked {
+      opacity: 1;
+      z-index: 1000;
+    }
+
+    .checkboxList {
+      columns: 2;
+    }
+  }
+}

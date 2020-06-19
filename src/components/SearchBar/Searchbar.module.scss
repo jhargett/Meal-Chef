@@ -1,0 +1,104 @@
+@import "../../scss/utilities.scss";
+
+.Search {
+  position: relative;
+  width: 65%;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  transition: height 0.5s ease-out;
+
+  &.Clicked {
+    height: 100%;
+  }
+
+  &.Overflow {
+    overflow: visible;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 85%;
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 95%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .SearchContainer {
+    background-color: $primaryColor;
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 8px;
+    transition: all 0.6s ease-out;
+
+    &.clicked {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .searchFilter {
+      border: none;
+      width: 8%;
+      min-width: 50px;
+      background-color: white;
+      height: 40px;
+      position: relative;
+      border-radius: 4px;
+
+      img {
+        width: 30px;
+        height: 27px;
+        transition: transform 0.5s ease;
+
+        &.Clicked {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    .searchBar {
+      border: none;
+      background-color: $primaryColor;
+      padding: 0px 25px;
+      width: 77%;
+      border-radius: 6px;
+      font-size: 25px;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    .searchButton {
+      border: none;
+      width: 15%;
+      min-width: 70px;
+      background-color: white;
+      height: 40px;
+      border-radius: 4px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  .filterContainer {
+    height: 60px;
+    width: 100%;
+    margin-top: 0;
+    border-top: 1px solid rgba(159, 158, 158, 0.17);
+    background-color: $primaryColor;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+  }
+}

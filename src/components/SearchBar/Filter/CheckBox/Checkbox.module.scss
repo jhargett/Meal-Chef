@@ -1,0 +1,48 @@
+.Checkbox {
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 24px;
+        width: 24px;
+        z-index: 100;
+
+
+        &:checked ~ .checkboxDesign {
+            background-color: #009bff;
+        }
+
+        &:hover ~.checkboxDesign {
+            background-color: #ccc;
+        }
+
+        &:checked:hover ~.checkboxDesign {
+            background-color: #009bff;
+        }
+
+    }
+
+    .checkboxDesign {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 24px;
+        width: 24px;
+        border-radius: 5px;
+        background-color: #eee;
+    }
+
+    p{
+        padding: 0px 0px 0px 10px;
+        font-size: 15px;
+    }
+}

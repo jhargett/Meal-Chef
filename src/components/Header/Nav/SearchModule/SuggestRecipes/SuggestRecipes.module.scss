@@ -1,0 +1,155 @@
+@import '../../../../../scss/utilities.scss';
+
+@mixin categoryResizing {
+  @media screen and (max-width: 800px) {
+    width: 48%;
+    margin: 1px;
+  }
+
+  @media screen and (max-width: 550px) {
+    width: 100%;
+    margin: 1px;
+    height: 300px;
+  }
+}
+
+
+
+.container {
+  max-width: 1366px;
+
+  .Spinner {
+    height: 400px;
+  }
+
+  .Card {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    margin: 15px 0;
+
+    &:nth-last-of-type(1) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+      padding: 40px;
+      margin-right: auto;
+      letter-spacing: 0.5px;
+    }
+
+    .Grid {
+      position: relative;
+      display: grid;
+      height: 100%;
+      width: 80%;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 1px;
+      margin-bottom: 30px;
+      cursor: pointer;
+
+      @media screen and (max-width: 800px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      @media screen and (max-width: 450px) {
+        width: 100%;
+      }
+
+      & > figure {
+        @include categoryResizing;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .caption {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: $primaryColor;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: 800px) {
+        height: 23%;
+      }
+
+      p {
+        color: white;
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        padding: 20px;
+      }
+    }
+
+    figure {
+      position: relative;
+    }
+
+    .Overlay {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: opacity 0.2s ease;
+
+      h4 {
+        color: black;
+        background-color: white;
+        padding: 15px 40px;
+        font-weight: 300;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .large {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    .medium {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 2;
+    }
+
+    .small {
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 3;
+    }
+
+    .small2 {
+      grid-column-start: 4;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 3;
+    }
+  }
+}

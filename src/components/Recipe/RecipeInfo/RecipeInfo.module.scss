@@ -1,0 +1,29 @@
+.Info {
+	text-align: center;
+	letter-spacing: 2px;
+
+	h3 {
+		font-size: 17px;
+		font-weight: 400;
+	}
+
+	p {
+		font-size: 15px;
+		color: #8b8b8b;
+	}
+}
+
+.infoSmall {
+	@extend .Info;
+	letter-spacing: 1px;
+    
+    &:before {
+        content: ' ';
+        position: absolute;
+        left: 50%;
+        width: 1px;
+        height: px;
+        background-color: rgba(190, 185, 185, 0.22);
+
+    }
+}

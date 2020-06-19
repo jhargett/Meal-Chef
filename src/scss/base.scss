@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-family: roboto;
+    background-color: #F7F8FA;
+}
+
+body {
+    margin: 0;
+	border: 0px;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+

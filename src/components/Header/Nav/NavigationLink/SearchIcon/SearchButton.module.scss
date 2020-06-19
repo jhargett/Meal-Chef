@@ -1,0 +1,33 @@
+@import './../../../../../scss/utilities.scss';
+
+.searchButton {
+  height: 60px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in;
+  z-index: 999;
+
+  &.Clicked {
+    background-color: $secondaryColor
+  }
+
+  &.Clicked > .searchIcon path {
+    fill: $primaryColor
+  }
+
+  &:hover {
+    background-color: $secondaryColor;
+    cursor: pointer;
+  }
+
+  &:hover .searchIcon path {
+    fill: $primaryColor
+  }
+
+  .searchIcon path {
+    fill: black;
+    transition: all 0.2s ease-in;
+  }
+}
