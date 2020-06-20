@@ -29,7 +29,7 @@ const recipeResults = (props) => {
 
   if (props.error) {
     return <Error message={"Oops, something went wrong"} />;
-  } else if (displayRecipe == "") {
+  } else if (displayRecipe === "") {
     return <Error message={"No Results Found"} />;
   } else return <div className={classes.ResultsContainer}>{displayRecipe}</div>;
 };

@@ -1,8 +1,6 @@
 import React from "react";
 import classes from "./Error.module.scss";
 
-import Transitions from '../Transitions.js/Transitions'
-
 const Error = (props) => {
   return (
 

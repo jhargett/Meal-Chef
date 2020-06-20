@@ -29,11 +29,10 @@ const App = (props) => {
   };
 
   const displaySearchHandler = () => {
-    if (displaySearch == true) {
+    if (displaySearch === true) {
       props.history.goBack();
     } else {
       props.history.push("/search");
-      console.log("search push");
     }
   };
 

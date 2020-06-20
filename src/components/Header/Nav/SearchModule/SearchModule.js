@@ -57,7 +57,6 @@ const SearchModule = (props) => {
 
   useEffect(() => {
     setShow((show) => true);
-    console.log("mount");
   }, []);
 
   const updateSearch = (e) => {
@@ -87,7 +86,7 @@ const SearchModule = (props) => {
       setIntolerances([...intolerance]);
     } else {
       intolerance = intolerance.filter((values) => {
-        return values != value;
+        return values !== value;
       });
 
       setIntolerances([...intolerance]);
@@ -105,7 +104,7 @@ const SearchModule = (props) => {
       setDiets([...diet]);
     } else {
       diet = diet.filter((values) => {
-        return values != value;
+        return values !== value;
       });
 
       setDiets([...diet]);
@@ -123,7 +122,7 @@ const SearchModule = (props) => {
       setCuisines([...cuisine]);
     } else {
       cuisine = cuisine.filter((values) => {
-        return values != value;
+        return values !== value;
       });
 
       setCuisines([...cuisine]);

@@ -56,7 +56,7 @@ const Searchbar = (props) => {
     }, 500);
   };
   const filterHolder = Object.keys(filters).map((key) => {
-    return <Filter filterName={key} filter={filters[key]} />;
+    return <Filter key={key} filterName={key} filter={filters[key]} />;
   });
 
   return (
@@ -73,8 +73,9 @@ const Searchbar = (props) => {
             onClick={() => filterDisplayHandler()}
           >
             <img
-              className={filterIconClicked && classes.Clicked}
+              className={filterIconClicked ? classes.Clicked : undefined}
               src={filterIcon}
+              alt="filter"
             />
           </button>
           <input

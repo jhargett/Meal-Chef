@@ -5,14 +5,14 @@ import Spinner from "../../UI/Card/Spinner/Spinner";
 import Error from "../../UI/Card/ErrorHandler/Error";
 import classes from "./Recipe.module.scss";
 
-const properties = {
+/*const properties = {
   readyInMinutes: "Minutes",
   servings: "Servings",
   dairyFree: "Dairy Free",
   glutenFree: "Gluten Free",
   vegan: "Vegan",
   vegetarian: "Vegetarian",
-};
+};*/
 
 const Recipe = (props) => {
   const [recipe, setRecipe] = useState([]);
@@ -58,7 +58,7 @@ const Recipe = (props) => {
       ) : (
         <div className={classes.Recipe}>
           <figure className={classes.recipeImage}>
-            <img src={recipe.image} alt="recipe image"></img>
+            <img src={recipe.image} alt="recipe"></img>
           </figure>
           <div className={classes.recipeTitle}>
             <Card>
@@ -83,7 +83,7 @@ const Recipe = (props) => {
               <ol className={classes.Instructions}>
                 {instructions.map((recipe) => {
                   return recipe.steps.map((steps) => {
-                    return <li>{steps.step}</li>;
+                    return <li key={steps.step}>{steps.step}</li>;
                   });
                 })}
               </ol>

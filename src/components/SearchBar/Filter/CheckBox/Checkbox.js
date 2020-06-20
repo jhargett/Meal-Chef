@@ -5,7 +5,7 @@ import Aux from "../../../../hoc/Aux";
 const checkbox = (props) => {
   const checkboxes = props.boxName.values.map((key) => {
     return (
-      <li className={classes.Checkbox}>
+      <li key={key} className={classes.Checkbox}>
         <input
           type="checkbox"
           name={key}

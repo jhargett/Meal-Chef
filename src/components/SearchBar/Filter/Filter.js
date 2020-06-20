@@ -11,7 +11,7 @@ const Filter = (props) => {
   const showCheckBox = (event) => {
     const clickChecker = clicked;
 
-    if (clickChecker == false) {
+    if (clickChecker === false) {
       setClicked(true);
       document.addEventListener("click", HideCheckBox);
     }
@@ -26,6 +26,12 @@ const Filter = (props) => {
       document.removeEventListener("click", HideCheckBox);
     }
   };
+  let positionChange = null;
+
+  if(props.filterName === "Diet" || props.filterName === "Cuisine") {
+    positionChange = "positionChange"
+  }
+
 
   return (
     <div
@@ -33,10 +39,10 @@ const Filter = (props) => {
       className={`${classes.Filter} ${clicked && classes.Clicked}`}
     >
       <p>{props.filterName}</p>
-      <img src={clicked && clicked ? downArrowBlack : downArrowWhite} />
+      <img src={clicked && clicked ? downArrowBlack : downArrowWhite} alt="arrow" />
       <div
         ref={checkbox}
-        className={`${classes.checkboxContainer} ${
+        className={`${classes.checkboxContainer} ${classes[positionChange]} ${
           clicked && clicked && classes.Clicked
         }`}
       >
