@@ -73,6 +73,10 @@
       font-size: 25px;
       color: white;
       text-transform: uppercase;
+
+      &::placeholder {
+        opacity: 0.5;
+      }
     }
 
     .searchButton {

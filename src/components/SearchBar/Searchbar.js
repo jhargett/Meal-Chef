@@ -82,6 +82,7 @@ const Searchbar = (props) => {
             type="text"
             value={props.search}
             onChange={props.updateSearch}
+            placeholder="Search"
           />
           <button className={classes.searchButton} type="submit">
             <img src={img} alt="search"></img>
