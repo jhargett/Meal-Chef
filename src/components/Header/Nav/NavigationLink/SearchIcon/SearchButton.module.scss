@@ -1,4 +1,4 @@
-@import './../../../../../scss/utilities.scss';
+@import "./../../../../../scss/utilities.scss";
 
 .searchButton {
   height: 60px;
@@ -10,24 +10,28 @@
   z-index: 999;
 
   &.Clicked {
-    background-color: $secondaryColor
+    background-color: $secondaryColor;
   }
 
   &.Clicked > .searchIcon path {
-    fill: $primaryColor
+    fill: $primaryColor;
   }
 
-  &:hover {
-    background-color: $secondaryColor;
-    cursor: pointer;
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background-color: $secondaryColor;
+      cursor: pointer;
+    }
   }
-
   &:hover .searchIcon path {
-    fill: $primaryColor
+    fill: $primaryColor;
   }
 
   .searchIcon path {
     fill: black;
     transition: all 0.2s ease-in;
+  }
+
+  @media screen and (max-width) {
   }
 }
